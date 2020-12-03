@@ -11,103 +11,112 @@
 		/>
 	</head>
 	<body>
-		<div class="movieContainer">
-			<label>Pick a movie:</label>
-			<select id="movie">
-				<option value="10">Cul De Sac $10</option>
-				<option value="10">Child's Play $10</option>
-				<option value="10">I ❤️ Huckabees $10</option>
-				<option value="10000">I ❤️ Krista $10000</option>
-				<option value="16">Avatar 3D IMAX $16</option>
-			</select>
-		</div>
+		<section class="movieInfo">
+			<div class="logo">
+				<img src="./assets/MovieCz.png" alt="Movie Cz Logo" />
+			</div>
+			<div class="poster"><img src="" alt="" /></div>
+			<div class="movieInfo"></div>
+		</section>
+		<section class="appArea">
+			<div class="movieContainer">
+				<label>Pick a movie:</label>
+				<select id="movie">
+					<option value="10">Cul De Sac $10</option>
+					<option value="10">Child's Play $10</option>
+					<option value="10">I ❤️ Huckabees $10</option>
+					<option value="10000">I ❤️ Krista $10000</option>
+					<option value="16">Avatar 3D IMAX $16</option>
+				</select>
+			</div>
 
-		<ul class="showcase">
-			<li>
-				<div class="seat"></div>
-				<small>Available</small>
-			</li>
-			<li>
-				<div class="seat unavailable"></div>
-				<small>Unavailable</small>
-			</li>
-			<li>
-				<div class="seat selected"></div>
-				<small>Selected</small>
-			</li>
-		</ul>
+			<ul class="showcase">
+				<li>
+					<div class="seat"></div>
+					<small>Available</small>
+				</li>
+				<li>
+					<div class="seat unavailable"></div>
+					<small>Unavailable</small>
+				</li>
+				<li>
+					<div class="seat selected"></div>
+					<small>Selected</small>
+				</li>
+			</ul>
 
-		<div class="container">
-			<div class="screen"></div>
+			<div class="container">
+				<div class="screen"></div>
 
-			<div class="row">
-				<div class="seat"></div>
-				<div class="seat"></div>
-				<div class="seat"></div>
-				<div class="seat"></div>
-				<div class="seat"></div>
-				<div class="seat"></div>
-				<div class="seat"></div>
-				<div class="seat"></div>
+				<div class="row">
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+				</div>
+				<div class="row">
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+				</div>
+				<div class="row">
+					<div class="seat unavailable"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat unavailable"></div>
+					<div class="seat unavailable"></div>
+				</div>
+				<div class="row">
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat unavailable"></div>
+					<div class="seat unavailable"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+				</div>
+				<div class="row">
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat unavailable"></div>
+					<div class="seat unavailable"></div>
+					<div class="seat unavailable"></div>
+					<div class="seat unavailable"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+				</div>
+				<div class="row">
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat unavailable"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat"></div>
+					<div class="seat unavailable"></div>
+				</div>
 			</div>
-			<div class="row">
-				<div class="seat"></div>
-				<div class="seat"></div>
-				<div class="seat"></div>
-				<div class="seat"></div>
-				<div class="seat"></div>
-				<div class="seat"></div>
-				<div class="seat"></div>
-				<div class="seat"></div>
-			</div>
-			<div class="row">
-				<div class="seat unavailable"></div>
-				<div class="seat"></div>
-				<div class="seat"></div>
-				<div class="seat"></div>
-				<div class="seat"></div>
-				<div class="seat"></div>
-				<div class="seat unavailable"></div>
-				<div class="seat unavailable"></div>
-			</div>
-			<div class="row">
-				<div class="seat"></div>
-				<div class="seat"></div>
-				<div class="seat unavailable"></div>
-				<div class="seat unavailable"></div>
-				<div class="seat"></div>
-				<div class="seat"></div>
-				<div class="seat"></div>
-				<div class="seat"></div>
-			</div>
-			<div class="row">
-				<div class="seat"></div>
-				<div class="seat"></div>
-				<div class="seat unavailable"></div>
-				<div class="seat unavailable"></div>
-				<div class="seat unavailable"></div>
-				<div class="seat unavailable"></div>
-				<div class="seat"></div>
-				<div class="seat"></div>
-			</div>
-			<div class="row">
-				<div class="seat"></div>
-				<div class="seat"></div>
-				<div class="seat"></div>
-				<div class="seat unavailable"></div>
-				<div class="seat"></div>
-				<div class="seat"></div>
-				<div class="seat"></div>
-				<div class="seat unavailable"></div>
-			</div>
-		</div>
 
-		<p class="text">
-			You have selected
-			<span id="count">0</span>
-			seats. Your total is $
-			<span id="total">0</span>
-		</p>
+			<p class="text">
+				You have selected
+				<span id="count">0</span>
+				seats. Your total is $
+				<span id="total">0</span>
+			</p>
+		</section>
 		<script src="./script.js"></script>
 	</body>
 </html>
