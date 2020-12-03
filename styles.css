@@ -226,6 +226,7 @@ body {
 	color: #7cfc00;
 	font-family: "Open Sans", sans-serif;
 	background-color: #1a061d;
+	/* background: url(./assets/honeycomb.jpg); */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -234,16 +235,116 @@ body {
 	margin: 0;
 }
 
-select {
-	font-family: "Miniver", sans-serif;
-	font-size: 1.4rem;
-	color: rgb(0, 230, 238);
+.movieContainer {
+	margin: 20px 0;
+}
+
+.movieContainer select {
+	font-size: 1.2rem;
+	color: #090125;
 	border: none;
 	border-radius: 5px;
 	background-color: white;
-	padding: 10px;
+	padding: 5px 10px;
+	margin: 10px;
+	text-align: center;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
 }
 
-option {
-	font-family: "Miniver", sans-serif;
+.seat {
+	background-color: #444451;
+	height: 15px;
+	width: 15px;
+	margin: 3px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.seat:nth-of-type(2) {
+	margin-right: 18px;
+}
+
+.seat:nth-of-type(6) {
+	margin-right: 18px;
+}
+
+.seat:not(.unavailable).selected {
+	background-color: #7cfc00;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.seat.unavailable {
+	background-color: #fc7100;
+	cursor: default;
+}
+
+.seat:not(.unavailable) {
+	transition: all 0.2s ease-in;
+	transform: rotate(0deg);
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.seat:not(.unavailable):hover,
+.seat:not(.unavailable):focus {
+	cursor: pointer;
+	transform: rotate(180deg);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.showcase li .seat:not(.unavailable):hover,
+.showcase li .seat:not(.unavailable):focus {
+	cursor: default;
+	transform: rotate(0deg);
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.row,
+.showcase {
+	display: flex;
+}
+
+.showcase {
+	margin: 0 0 40px 0;
+	background: rgba(0, 0, 0, 0.2);
+	padding: 5px 10px;
+	border-radius: 5px;
+	color: #777;
+	list-style-type: none;
+}
+
+.showcase li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 10px;
+}
+
+li .seat {
+	margin: 0 10px;
+}
+
+.screen {
+	background-color: #fff;
+	height: 80px;
+	width: 100%;
+	margin: 15px 0;
+	transform: rotateX(-45deg);
+	box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+.container {
+	perspective: 700px;
+	margin-bottom: 40px;
+}
+
+p.text span {
+	color: #fff;
 }
